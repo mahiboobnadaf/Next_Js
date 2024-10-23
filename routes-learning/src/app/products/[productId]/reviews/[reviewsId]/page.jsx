@@ -2,7 +2,8 @@ export default function Reviews_Details({params}){
     console.log(params)
     return (
         <>
-            <h1> Reviews Details {params.reviewsId} </h1>
+            <h1> Review Details {params.reviewsId},
+                 For Product detail Id {params.productId} </h1>
         </>
     )
 }

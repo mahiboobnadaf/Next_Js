@@ -19,7 +19,7 @@ export default function Authentication({children}){
                 return (
                         <Link href={link.href} key={link.name} 
                             className= {isActive ? "font-extrabold text-black bg-slate-500":"text-blue-800 underline"}> 
-                            <div className={isActive ? "bg-slate-500":""} > {link.name}</div> </Link>
+                            <div className={isActive ? "bg-slate-400 w-fit underline":""} > {link.name}</div> </Link>
                 )
             })}
         </div>

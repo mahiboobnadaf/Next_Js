@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Authentication({children}){
     const navLinks = [
@@ -6,14 +8,18 @@ export default function Authentication({children}){
             {name:"Login",href:"/login"},
             {name:"Forgot-Password",href:"/forgot-password"},
     ];
+    const pathName = usePathname(); 
 
     return (
         <div className="font-semibold">
             {children}
             <h1 className="text-red-800 flex justify-center font-extrabold text-2xl">Authentication</h1>
             {navLinks.map((link)=>{
+                let isActive = pathName.startsWith(link.href)
                 return (
-                   <Link href={link.href} key={link.name} className="text-blue-800 underline"> <h2>{link.name}</h2></Link>
+                        <Link href={link.href} key={link.name} 
+                            className= {isActive ? "font-extrabold text-black bg-slate-500":"text-blue-800 underline"}> 
+                            <div className={isActive ? "bg-slate-500":""} > {link.name}</div> </Link>
                 )
             })}
         </div>

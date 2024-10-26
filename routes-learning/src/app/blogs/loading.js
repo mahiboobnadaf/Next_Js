@@ -1,5 +1,4 @@
 export default function Loading(){
-    console.log("buddy is loading")
     return (
         <>
             <div class="flex flex-col items-center space-y-4 text-gray-600">

@@ -5,7 +5,7 @@ function RandomNumber(num){
 
 export default function Reviews_Details({params}){
     // console.log(params)
-    let randomNum = RandomNumber(2);
+    let randomNum = RandomNumber(5);
 
     if(randomNum == 1){
         throw new Error("Error in ReviewID page")

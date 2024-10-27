@@ -16,7 +16,7 @@ const Card = ({ children }) => {
   };
 
   const hoverStyle = {
-    transform: 'translateY(-10px)',
+    transform: 'translateY(-20px)',
     boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)',
   };
 

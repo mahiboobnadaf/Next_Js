@@ -4,6 +4,6 @@ import Card from "../../components/Card";
 
 export default function Notifications(){
     return (
-     <Card> Notifications</Card>   
+     <Card h='350px'> Notifications</Card>   
     )
 }

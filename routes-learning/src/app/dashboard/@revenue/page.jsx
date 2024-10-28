@@ -1,3 +1,7 @@
+// import Card from "@/app/components/card";
+import Card from "../../components/Card";
+
+
 export default function RevenueAnalytics(){
-    return <h1> Revenue analytics </h1>
+    return <Card>Revenew Details</Card>
 }

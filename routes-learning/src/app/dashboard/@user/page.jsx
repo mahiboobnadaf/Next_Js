@@ -1,3 +1,5 @@
+import Card from "../../components/Card";
+
 export default function UserAnalytics(){
-    return <p className="font-extrabold bg-slate-500"> User analytics </p>
+    return  <Card>User details </Card>
 }

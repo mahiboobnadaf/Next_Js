@@ -1,7 +1,7 @@
 import Card from "../components/Card"
 
 export default function Layout({ children ,user,revenue, notifications, login}) {
-  const isLogin = false
+  const isLogin = true
   return isLogin ? ( 
     <>
         <div className="p-10"> {children} </div>
